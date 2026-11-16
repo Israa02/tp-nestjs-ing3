@@ -8,8 +8,8 @@ export class TravelController {
   constructor(private readonly travelService: TravelService) {}
 
   @Post()
-  create(@Body() createTravelDto: CreateTravelDto) {
-    return this.travelService.create(createTravelDto);
+  create(@Body() createTravelDto: CreateTravelDto) : String {
+    return ('Planifier un nouveau voyage ici ') ;
   }
 
   @Get()
